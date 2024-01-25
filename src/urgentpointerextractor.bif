@@ -1,0 +1,12 @@
+module UrgentPointerExtractor; 
+
+%%{
+#include <cstring>
+#include <cctype>
+#include "zeek/util.h"
+#include "zeek/ZeekString.h"
+#include "zeek/Val.h"
+#include <iostream>
+%%}
+
+event URG_feature_event%(c : connection, URG_flag : count, URG_ptr : count%);
